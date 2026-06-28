@@ -210,6 +210,26 @@ corpus_markdown/  →  ingest.py  →  ChromaDB  →  test_rag.py  →  rag_answ
 - Retrieval : recherche sémantique dans ChromaDB
 - Génération : réponse augmentée via Gemma 4
 
+## Schéma ASCII — Architecture RAG Correctif
+
+```text
+Utilisateur
+│
+▼
+Reformulation de la question (Gemma 4)
+│
+▼
+Recherche vectorielle (BGE + ChromaDB)
+│
+▼
+Vérification de pertinence (Gemma 4)
+│
+├── Si non pertinent → Reformulation + nouvelle recherche
+│
+▼
+Réponse finale augmentée (Gemma 4)
+```
+
 ## 7. Scripts du projet
 
 ### 7.1 `ingest.py` — Ingestion + Embeddings + Stockage
