@@ -3,6 +3,7 @@
 ![RAG](https://img.shields.io/badge/Architecture-RAG_Correctif-orange)
 ![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
 ![Gemma](https://img.shields.io/badge/LLM-Gemma_4_12B-red)
+![Tests](https://img.shields.io/badge/Tests-OK-brightgreen)
 
 Ce projet démontre la création d’un assistant IA 100% offline basé sur un pipeline RAG correctif. 
 Il utilise Gemma 4, BGE et ChromaDB pour fournir des réponses fiables à partir d’un corpus Markdown local. 
