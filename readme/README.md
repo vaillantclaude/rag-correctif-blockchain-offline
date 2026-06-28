@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Offline](https://img.shields.io/badge/Mode-100%25_Offline-success)
+![RAG](https://img.shields.io/badge/Architecture-RAG_Correctif-orange)
+![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
+![Gemma](https://img.shields.io/badge/LLM-Gemma_4_12B-red)
+
 # Projet : RAG Correctif Local basé sur Markdown
 ## Gemma 4 + BGE + ChromaDB — 100% Offline
 
@@ -16,6 +22,64 @@ Objectifs principaux :
 - Utiliser un pipeline RAG correctif, plus fiable qu’un RAG simple.
 - S’appuyer sur des outils gratuits, simples, open source.
 - Assurer une architecture stable, maintenable, reproductible.
+
+## Pourquoi ce projet est utile en entreprise
+
+Ce projet répond à des besoins réels des PME/TPE qui souhaitent intégrer l’IA de manière sécurisée, simple et efficace.
+
+### ✔️ 1. 100% Offline — aucune fuite de données
+Le système fonctionne entièrement en local :
+- aucun cloud,
+- aucun envoi de données,
+- aucune dépendance externe.
+
+Idéal pour les entreprises sensibles (finance, santé, industrie, collectivités).
+
+### ✔️ 2. Basé sur les documents internes
+Le RAG utilise uniquement :
+- les fichiers Markdown internes,
+- les procédures,
+- les formations,
+- les documents métier.
+
+L’IA devient un **assistant interne** spécialisé dans le métier de l’entreprise.
+
+### ✔️ 3. Pipeline correctif = fiabilité accrue
+Contrairement à un RAG simple :
+- la question est reformulée,
+- la pertinence est vérifiée,
+- la recherche est corrigée si nécessaire.
+
+Résultat :
+- moins d’hallucinations,
+- réponses plus précises,
+- meilleure cohérence.
+
+### ✔️ 4. Coût nul — matériel existant
+Le système tourne sur :
+- un Mac,
+- un PC,
+- un serveur interne.
+
+Sans abonnement, sans API, sans cloud.
+
+### ✔️ 5. Architecture simple et maintenable
+Les composants sont :
+- LM Studio,
+- ChromaDB,
+- BGE,
+- Python.
+
+Tous gratuits, open source, faciles à maintenir.
+
+### ✔️ 6. Reproductible dans n’importe quelle PME
+L’entreprise peut :
+- ajouter ses propres documents,
+- adapter le corpus,
+- créer son assistant métier,
+- étendre le système à d’autres services.
+
+C’est une base solide pour un **assistant IA interne**.
 
 ## 2. Architecture technique retenue
 L’architecture repose sur 5 composants locaux, simples, gratuits et robustes.
