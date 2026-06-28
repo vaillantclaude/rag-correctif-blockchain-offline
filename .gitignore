@@ -1,0 +1,17 @@
+# Données sensibles
+corpus_markdown/
+chroma_db/
+
+# Modèles IA
+*.gguf
+
+# Fichiers privés
+*.docx
+
+# Environnements
+.venv/
+__pycache__/
+.env
+
+# LM Studio
+.lmstudio/
