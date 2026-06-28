@@ -4,6 +4,12 @@
 ![ChromaDB](https://img.shields.io/badge/VectorDB-ChromaDB-purple)
 ![Gemma](https://img.shields.io/badge/LLM-Gemma_4_12B-red)
 
+Ce projet démontre la création d’un assistant IA 100% offline basé sur un pipeline RAG correctif. 
+Il utilise Gemma 4, BGE et ChromaDB pour fournir des réponses fiables à partir d’un corpus Markdown local. 
+L’architecture est simple, sécurisée, reproductible et adaptée aux PME/TPE souhaitant intégrer l’IA sans cloud. 
+Ce repository présente l’architecture, les scripts, le pipeline et les choix techniques. 
+C’est un projet professionnel démontrant la maîtrise des LLM locaux et de la gouvernance IA.
+
 # Projet : RAG Correctif Local basé sur Markdown
 ## Gemma 4 + BGE + ChromaDB — 100% Offline
 
@@ -108,7 +114,7 @@ Modèle utilisé : BGE Small v1.5 (GGUF)
 Chemin exact :
 
 ```text
-/Users/claude/.lmstudio/models/CompendiumLabs/bge-small-en-v1.5-gguf/bge-small-en-v1.5-q8_0.gguf
+~/.lmstudio/models/CompendiumLabs/bge-small-en-v1.5-gguf/bge-small-en-v1.5-q8_0.gguf
 ```
 
 Raisons du choix :
@@ -286,8 +292,7 @@ RAG-BLOCKCHAIN/
 ├── test_rag.py               ← test retrieval
 ├── rag_answer.py             ← RAG complet
 │
-└── readme/
-    └── README.md             ← ce fichier
+└── README.md             ← ce fichier
 ```
 
 ## 9. Ce que permet ce système
@@ -309,4 +314,4 @@ Le recours à un stockage vectoriel persistant facilite la réutilisation du cor
 
 ## 11. Conclusion
 Ce projet fournit une base RAG locale, simple à maintenir et totalement autonome.  
-En combinant un corpus Markdown, des embeddings locaux, ChromaDB persistant et un LLM local, tu obtiens un assistant blockchain privé, rapide, fiable et évolutif. [web:12][web:14][web:11][web:15]
+En combinant un corpus Markdown, des embeddings locaux, ChromaDB persistant et un LLM local, tu obtiens un assistant blockchain privé, rapide, fiable et évolutif.
