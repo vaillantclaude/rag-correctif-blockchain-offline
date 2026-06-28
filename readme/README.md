@@ -276,7 +276,51 @@ Commande :
 python rag_answer.py
 ```
 
-## 8. Arborescence du projet
+## 8. Validation & Qualité
+
+Ce projet RAG correctif a été conçu pour être fiable, reproductible et adapté aux besoins des PME/TPE.  
+La validation du système repose sur trois niveaux de tests, documentés et exécutables.
+
+### 8.1. Tests d’ingestion & embeddings
+- Script : `ingest.py`
+- Documentation : `tests/test_ingestion.md`
+- Vérifie :
+  - la lecture correcte des fichiers Markdown,
+  - la génération des chunks,
+  - la création des embeddings BGE,
+  - la persistance des vecteurs dans ChromaDB.
+
+### 8.2. Tests de recherche vectorielle (retrieval)
+- Script : `test_rag.py`
+- Documentation : `tests/test_retrieval.md`
+- Vérifie :
+  - la cohérence des passages retournés,
+  - la pertinence sémantique,
+  - l’intégrité de la base vectorielle.
+
+### 8.3. Test du pipeline RAG complet
+- Script : `rag_answer.py`
+- Documentation : `tests/test_rag_complet.md`
+- Vérifie :
+  - la reformulation de la question,
+  - la sélection des passages pertinents,
+  - la correction éventuelle,
+  - la réponse finale basée sur le corpus Markdown.
+
+### 8.4. Test automatique global
+- Script : `run_tests.py`
+- Exécute automatiquement les trois étapes précédentes.
+- Permet de valider rapidement que le système fonctionne sans erreur.
+
+### 8.5. Approche PME/TPE
+Cette stratégie de validation est volontairement simple, claire et reproductible.  
+Elle garantit :
+- un système fiable,
+- une maintenance facile,
+- une transparence totale pour le dirigeant,
+- une qualité constante sans complexité inutile.
+
+## 9. Arborescence du projet
 
 ```text
 RAG-BLOCKCHAIN/
@@ -295,7 +339,7 @@ RAG-BLOCKCHAIN/
 └── README.md             ← ce fichier
 ```
 
-## 9. Ce que permet ce système
+## 10. Ce que permet ce système
 - Assistant blockchain offline
 - Basé sur tes propres cours
 - Recherche sémantique précise
@@ -305,13 +349,13 @@ RAG-BLOCKCHAIN/
 
 Le recours à un stockage vectoriel persistant facilite la réutilisation du corpus et la séparation entre ingestion et interrogation. [web:11][web:13][web:15][web:17][web:18]
 
-## 10. Prochaines évolutions possibles
+## 11. Prochaines évolutions possibles
 - Interface web avec Gradio
 - API locale avec FastAPI
 - Mode conversationnel avec mémoire
 - Ajout automatique de nouveaux documents
 - Optimisation des embeddings
 
-## 11. Conclusion
+## 12. Conclusion
 Ce projet fournit une base RAG locale, simple à maintenir et totalement autonome.  
 En combinant un corpus Markdown, des embeddings locaux, ChromaDB persistant et un LLM local, tu obtiens un assistant blockchain privé, rapide, fiable et évolutif.
